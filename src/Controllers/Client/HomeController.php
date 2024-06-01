@@ -7,9 +7,9 @@ use Chien\XuongOop\Commons\Controller;
 
 class HomeController extends Controller
 {
-    public function index(){
-        $name = 'Chiến';
+    public function index() {
 
+        $name = 'Chien';
         $this->renderViewClient('home', [
             'name' => $name
         ]);

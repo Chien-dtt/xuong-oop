@@ -3,30 +3,58 @@
 namespace Chien\XuongOop\Controllers\Admin;
 
 use Chien\XuongOop\Commons\Controller;
+use Chien\XuongOop\Commons\Helper;
+use Chien\XuongOop\Models\User;
 
 class UserController extends Controller
 {
-    public function index(){
+    private User $user;
+
+    public function __construct()
+    {
+        $this->user = new User();
+    }
+
+    public function index()
+    {
+        [$users, $totalPage] = $this->user->paginate($_GET['page'] ?? 1);
+
+        $this->renderViewAdmin('users.index', [
+            'users' => $users,
+            'totalPage' => $totalPage
+        ]);
+    }
+
+    public function create()
+    {
         echo __CLASS__ . '@' . __FUNCTION__;
     }
 
-    public function create(){
+    public function store()
+    {
         echo __CLASS__ . '@' . __FUNCTION__;
     }
 
-    public function show($id){
+    public function show($id)
+    {
         echo __CLASS__ . '@' . __FUNCTION__ . ' - ID = ' . $id;
     }
 
-    public function edit($id){
+    public function edit($id)
+    {
         echo __CLASS__ . '@' . __FUNCTION__ . ' - ID = ' . $id;
     }
 
-    public function update($id){
+    public function update($id)
+    {
         echo __CLASS__ . '@' . __FUNCTION__ . ' - ID = ' . $id;
     }
 
-    public function delete($id){
-        echo __CLASS__ . '@' . __FUNCTION__ . ' - ID = ' . $id;
+    public function delete($id)
+    {
+        $this->user->delete($id);
+
+        header('Location: ' . url('admin/users'));
+        exit();
     }
 }
