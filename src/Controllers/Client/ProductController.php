@@ -1,16 +1,28 @@
-<?php
+<?php 
 
 namespace Chien\XuongOop\Controllers\Client;
 
 use Chien\XuongOop\Commons\Controller;
+use Chien\XuongOop\Models\Product;
 
 class ProductController extends Controller
 {
-    public function index(){
+    private Product $product;
+
+    public function __construct()
+    {
+        $this->product = new Product();
+    }
+    
+    public function index() {
         echo __CLASS__ . '@' . __FUNCTION__;
     }
 
-    public function detail($id){
-        echo __CLASS__ . '@' . __FUNCTION__ . '@' . $id;
+    public function detail($id) {
+        $product = $this->product->findByID($id);
+
+        $this->renderViewClient('product-detail', [
+            'product' => $product
+        ]);
     }
 }
