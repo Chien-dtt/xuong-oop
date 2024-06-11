@@ -47,16 +47,16 @@
 
     @yield('script')
     <div class="container">
-        <nav class="mt-5">
+        {{-- <nav class="mt-5">
             <a href="{{ url('admin') }}">Dashboard</a>
             <a href="{{ url('admin/products') }}">Quản lý Sản phẩm</a>
-        </nav>
+        </nav> --}}
 
-        <h1 class="mt-5 mb-3 text-center">@yield('title')</h1>
+        {{-- <h1 class="mt-5 mb-3 text-center">@yield('title')</h1> --}}
         
-        <div class="row">
+        {{-- <div class="row">
             @yield('content')
-        </div>
+        </div> --}}
     </div>
 </body>
 

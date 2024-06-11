@@ -78,12 +78,12 @@
                                         @endphp
                                         <a class="btn btn-primary" href="{{ $url }}">Tăng</a>
                                     </td>
-                                    <td>
+                                    {{-- <td>
                                         {{ $item['price_sale'] ?: $item['price_regular'] }}
-                                    </td>
-                                    <td>
+                                    </td> --}}
+                                    {{-- <td>
                                         {{ $item['quantity'] * ($item['price_sale'] ?: $item['price_regular']) }}
-                                    </td>
+                                    </td> --}}
                                     <td>
                                         @php
                                             $url = url('cart/remove') . '?productID=' . $item['id'];
