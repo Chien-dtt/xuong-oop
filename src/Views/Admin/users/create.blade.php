@@ -52,6 +52,13 @@
             <label for="password" class="form-label">Confirm Password:</label>
             <input type="text" class="form-control" id="confirm_password" placeholder="Enter confirm_password" name="confirm_password">
         </div>
+        <div class="mb-3 mt-3">
+            <label for="password" class="form-label">Type:</label>
+            <select name="type" id="role">
+                <option value="<?= $user['type'] ?>">Admin</option>
+                <option value="<?= $user['type'] ?>">User</option>
+            </select>
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </body>

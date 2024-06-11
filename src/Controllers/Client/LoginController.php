@@ -41,6 +41,8 @@ class LoginController extends Controller
                 if ($user['type'] == 'admin') {
                     header('Location: ' . url('admin/') );
                     exit;
+                }else {
+                    header('Location:' . url('/') );
                 }
 
                 header('Location: ' . url() );

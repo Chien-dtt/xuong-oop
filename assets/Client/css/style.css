@@ -106,6 +106,27 @@ body {
   background-color: #fff;
   overflow-x: hidden;
 }
+.beautiful-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6b6b, #f06595);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.beautiful-button:hover {
+  background: linear-gradient(45deg, #f06595, #ff6b6b);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.beautiful-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
 ::-moz-selection {
   background: #2ec458;

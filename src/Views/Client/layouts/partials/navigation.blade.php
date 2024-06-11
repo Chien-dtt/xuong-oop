@@ -6,12 +6,13 @@
                 <ul class="list-inline">
                     <li class="list-inline-item">
                         @if (!isset($_SESSION['user']))
-                        <a class="text-default" href="{{ url('login') }}">Login &nbsp; &nbsp; /</a>
+                            <a class="text-default btn" href="{{ url('login') }}" style="padding: 15px 30px; background: linear-gradient(45deg, #ff6b6b, #f06595); border-radius: 25px;">Login &nbsp; &nbsp; </a>
                         @endif
-                        </li>
+                    </li>
                     <li class="list-inline-item text-primary">
                         @if (isset($_SESSION['user']))
-                        <a class="text-default" href="{{ url('logout') }}">Logout</a>
+                            <a class="text-default btn" href="{{ url('logout') }}"
+                                style="padding: 15px 30px; background: linear-gradient(45deg, #ff6b6b, #f06595); border-radius: 25px;">Logout</a>
                         @endif
                     </li>
                 </ul>
@@ -21,12 +22,11 @@
 
     <svg class="header-shape-1" width="39" height="40" viewBox="0 0 39 40" fill="none"
         xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.965848 20.6397L0.943848 38.3906L18.6947 38.4126L18.7167 20.6617L0.965848 20.6397Z"
-            stroke="#040306" stroke-miterlimit="10" />
-        <path class="path"
-            d="M10.4966 11.1283L10.4746 28.8792L28.2255 28.9012L28.2475 11.1503L10.4966 11.1283Z" />
-        <path d="M20.0078 1.62949L19.9858 19.3804L37.7367 19.4024L37.7587 1.65149L20.0078 1.62949Z"
-            stroke="#040306" stroke-miterlimit="10" />
+        <path d="M0.965848 20.6397L0.943848 38.3906L18.6947 38.4126L18.7167 20.6617L0.965848 20.6397Z" stroke="#040306"
+            stroke-miterlimit="10" />
+        <path class="path" d="M10.4966 11.1283L10.4746 28.8792L28.2255 28.9012L28.2475 11.1503L10.4966 11.1283Z" />
+        <path d="M20.0078 1.62949L19.9858 19.3804L37.7367 19.4024L37.7587 1.65149L20.0078 1.62949Z" stroke="#040306"
+            stroke-miterlimit="10" />
     </svg>
 
 
@@ -40,11 +40,10 @@
                 stroke="#040306" stroke-miterlimit="10" />
         </g>
         <defs>
-            <filter id="filter0_d" x="0.905273" y="0" width="37.8663" height="38.1979"
-                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <filter id="filter0_d" x="0.905273" y="0" width="37.8663" height="38.1979" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
                 <feOffset dy="4" />
                 <feGaussianBlur stdDeviation="2" />
                 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
@@ -57,12 +56,11 @@
 
     <svg class="header-shape-3" width="39" height="40" viewBox="0 0 39 40" fill="none"
         xmlns="{{ asset('assets/client/http://www.w3.org/2000/svg') }}">
-        <path d="M0.965848 20.6397L0.943848 38.3906L18.6947 38.4126L18.7167 20.6617L0.965848 20.6397Z"
-            stroke="#040306" stroke-miterlimit="10" />
-        <path class="path"
-            d="M10.4966 11.1283L10.4746 28.8792L28.2255 28.9012L28.2475 11.1503L10.4966 11.1283Z" />
-        <path d="M20.0078 1.62949L19.9858 19.3804L37.7367 19.4024L37.7587 1.65149L20.0078 1.62949Z"
-            stroke="#040306" stroke-miterlimit="10" />
+        <path d="M0.965848 20.6397L0.943848 38.3906L18.6947 38.4126L18.7167 20.6617L0.965848 20.6397Z" stroke="#040306"
+            stroke-miterlimit="10" />
+        <path class="path" d="M10.4966 11.1283L10.4746 28.8792L28.2255 28.9012L28.2475 11.1503L10.4966 11.1283Z" />
+        <path d="M20.0078 1.62949L19.9858 19.3804L37.7367 19.4024L37.7587 1.65149L20.0078 1.62949Z" stroke="#040306"
+            stroke-miterlimit="10" />
     </svg>
 
 

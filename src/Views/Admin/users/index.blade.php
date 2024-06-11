@@ -38,6 +38,7 @@
                                     <th>IMAGE</th>
                                     <th>NAME</th>
                                     <th>EMAIL</th>
+                                    <th>TYPE</th>
                                     <th>CREATED AT</th>
                                     <th>UPDATED AT</th>
                                     <th>ACTION</th>
@@ -53,6 +54,7 @@
                                         </td>
                                         <td><?= $user['name'] ?></td>
                                         <td><?= $user['email'] ?></td>
+                                        <td><?= $user['type'] ?></td>
                                         <td><?= $user['created_at'] ?></td>
                                         <td><?= $user['updated_at'] ?></td>
                                         <td>
